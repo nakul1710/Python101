@@ -1,4 +1,4 @@
-# Indexing = accessing elements of sequence using [] (indexing operator)
+# String Indexing: = accessing elements of sequence using [] (indexing operator)
 #   [start : end : step]
 
 
@@ -17,3 +17,12 @@ print(f"XXXX-XXXX-XXXX-{last_digits}")
 reverse_digit_number = credit_number[::-1]
 print(f"{reverse_digit_number}")
 
+
+email = input("Enter your Email:")
+
+index = email.index('@')
+
+username = email[:index]
+domain = email[index+1:]
+
+print(f"Your username is {username} and domain is {domain}")
