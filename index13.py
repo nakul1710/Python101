@@ -35,7 +35,7 @@
 
 ##2 * Sets *
 
-fruits = {"Mango" , "banana" , "Coconut" , "Orange"}
+#fruits = {"Mango" , "banana" , "Coconut" , "Orange"}
 
 # fruits.add("Pineapple")
 # fruits.remove("Orange")
@@ -45,4 +45,24 @@ fruits = {"Mango" , "banana" , "Coconut" , "Orange"}
 
 
 
+#print(fruits)
+
+
+##3 tuples
+
+fruits = ("Mango" , "banana" , "Coconut" , "Orange")
+
+# print(dir(fruits))
+# print(help(fruits))
+# print(len(fruits))
+# print("pinapple" in fruits)
+# print(fruits.index("Mango"))
+# print(fruits.count("banana"))
+
+
+
 print(fruits)
+for fruits in fruits:
+    print(fruits)
+
+
