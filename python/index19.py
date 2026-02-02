@@ -16,7 +16,7 @@ while running:
     print(f"Computer: {computer}")
     
     if player == computer:
-        print("It's a tie!")
+        print("It's a tie!")   
     elif (player == "rock" and computer == "scissors") or \
          (player == "paper" and computer == "rock") or \
          (player == "scissors" and computer == "paper"):
