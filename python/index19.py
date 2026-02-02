@@ -14,7 +14,7 @@ while running:
 
     print(f"Player: {player}")
     print(f"Computer: {computer}")
-
+    
     if player == computer:
         print("It's a tie!")
     elif (player == "rock" and computer == "scissors") or \
@@ -27,3 +27,4 @@ while running:
     play_again = input("Play again? (y/n): ").lower()
     if play_again != "y":
         running = False
+ 
