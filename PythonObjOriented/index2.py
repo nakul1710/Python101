@@ -28,7 +28,4 @@ print(student4.name)
 print(student4.age)
 
 
-
-
-
 print(f"My graduating class of {Student.class_year} has {Student.num_student} students")
