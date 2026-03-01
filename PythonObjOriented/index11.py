@@ -27,11 +27,20 @@ class Company:
     def list_employees(self):
         return [employee.get_details() for employee in self.employees]
 
-company = Company("Macdonald")
+company1 = Company("Macdonald")
+company2 = Company("BurgerKing")
 
-company.add_employee("Eugene", "Manager")
-company.add_employee("spangbob", "Cook")
-company.add_employee("Squidward", "Casier")
+company1.add_employee("Eugene", "Manager")
+company1.add_employee("spangbob", "Cook")
+company1.add_employee("Squidward", "Casier")
 
-for employee in company.list_employees():
+
+company2.add_employee("Robbin", "Manager")
+company2.add_employee("Joe", "Cook")
+company2.add_employee("Dustin", "Casier")
+
+for employee in company1.list_employees():
+    print(employee)
+
+for employee in company2.list_employees():
     print(employee)
