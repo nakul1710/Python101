@@ -1,6 +1,5 @@
 import time
 import datetime
-
 # To install pygame, run the following command in your terminal:
 # pip install pygame
 
