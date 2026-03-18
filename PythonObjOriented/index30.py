@@ -11,5 +11,5 @@ def get_pokemon_data(pokemon_name):
     return response.json()
 
 pokemon_name = "Pikachu"
-data = get_pokemon_data(pokemon_name)
+data = get_pokemon_data(pokemon_name)    
 print(data["name"], "id:", data["id"])
