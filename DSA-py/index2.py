@@ -1,6 +1,7 @@
 #Bubble sort [Adjacent swaps] TC = O(n) SC = O(1)
 
 nums = [2, 1, 4, 7, 6, 3]
+
 def bubble_sort(nums):
     n = len(nums)
     for i in range(n):
