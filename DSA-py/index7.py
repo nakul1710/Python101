@@ -54,3 +54,20 @@ class Solution(object):
                 right = mid - 1  # search left half
 
         return -1  # element not found
+
+#Binary search for recursive
+class Solution(object):
+    def binarySearch(self, nums, left, right, target):
+        if left > right:
+            return -1  # base case: not found
+
+        mid = (left + right) // 2
+
+        if nums[mid] == target:
+            return mid
+
+        elif nums[mid] < target:
+            return self.binarySearch(nums, mid + 1, right, target)
+
+        else:
+            return self.binarySearch(nums, left, mid - 1, target)
