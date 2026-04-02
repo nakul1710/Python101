@@ -32,4 +32,58 @@ reverse(nums, 0, 5)
 
 print(nums)
 
+#Rotate matrix by 90 degree
 
+class Solution(object):
+    def rotate(self, matrix):
+        n = len(matrix)
+
+        # Step 1: Transpose
+        for i in range(n):
+            for j in range(i, n):
+                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+
+        # Step 2: Reverse each row
+        for row in matrix:
+            row.reverse()
+
+
+#matrix in spiral order
+class Solution(object):
+    def spiralOrder(self, matrix):
+        res = []
+        
+        if not matrix:
+            return res
+        
+        top, bottom = 0, len(matrix) - 1
+        left, right = 0, len(matrix[0]) - 1
+        
+        while top <= bottom and left <= right:
+            
+            # left → right
+            for i in range(left, right + 1):
+                res.append(matrix[top][i])
+            top += 1
+            
+            # top → bottom
+            for i in range(top, bottom + 1):
+                res.append(matrix[i][right])
+            right -= 1
+            
+            if top <= bottom:
+                # right → left
+                for i in range(right, left - 1, -1):
+                    res.append(matrix[bottom][i])
+                bottom -= 1
+            
+            if left <= right:
+                # bottom → top
+                for i in range(bottom, top - 1, -1):
+                    res.append(matrix[i][left])
+                left += 1
+        
+        return res
+
+
+        
