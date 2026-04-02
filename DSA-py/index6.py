@@ -1,6 +1,6 @@
 #remove duplicate element from a sorted array
 
-nums = [1,1,1,2,3,4,4,7,9,9,9,10]
+nums = [1,1,1,2,3,4,4,7,9,9,9,11]
 
 n = len(nums)
 freq_map = {}
