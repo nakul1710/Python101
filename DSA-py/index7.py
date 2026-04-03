@@ -6,7 +6,7 @@ class Solution(object):
         n = len(nums)
 
         for i in range(n):
-            # skip duplicates
+            # skip duplicates 
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
 
@@ -29,7 +29,7 @@ class Solution(object):
 
                 elif total < 0:
                     left += 1
-                else:
+                else:   
                     right -= 1
 
         return res
