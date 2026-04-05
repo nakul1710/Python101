@@ -8,7 +8,7 @@ class Solution(object):
         for i in range(n):
             # skip duplicates 
             if i > 0 and nums[i] == nums[i - 1]:
-                continue
+                continue 
 
             left, right = i + 1, n - 1
 
@@ -71,3 +71,4 @@ class Solution(object):
 
         else:
             return self.binarySearch(nums, left, mid - 1, target)
+       
