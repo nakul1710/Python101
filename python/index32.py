@@ -35,14 +35,14 @@ for x in card_number[1::2]:
         sum_even_digits += (1 + (x%10))
     else:
         sum_even_digits += x
+   
 
-
-#step4
+#step4  
 total = sum_even_digits + sum_odd_digits
-
+    
 
 #step5
 if total % 10 == 0:
     print("VALID")
 else:
-    print("Invalid")
+    print("Invalid") 

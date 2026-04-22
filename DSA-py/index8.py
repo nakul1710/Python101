@@ -1,4 +1,7 @@
 #Singly linked list
+from turtle import position
+
+
 class Node:
     def __init__(self, val):
         self.val = val
@@ -74,6 +77,25 @@ my_trav_list.head = node1
 my_trav_list.traversal()
 
 
+# insert at specific position
 
-
+def insert_at(self, val, position):
+    new_node = Node(val)
+    if position == 0:
+        new_node.next = self.head
+        self.head = new_node
+    else:
+        curr = self.head
+        count = 0
+        prev = None
+        while curr is not None and count < position:
+            prev = curr
+            curr = curr.next
+            count += 1
+        if prev is None:
+            # position > 0 but list is empty
+            self.head = new_node
+        else:
+            prev.next = new_node
+            new_node.next = curr
 
